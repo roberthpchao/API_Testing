@@ -1,0 +1,27 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# VS Code
+.vscode/
+.DS_Store
+
+# Secrets - NEVER commit these!
+.env
+*.env
+*.key
+*.pem
+*.secret
+
+# Postman (ignore environment files with secrets)
+*.postman_environment.json
