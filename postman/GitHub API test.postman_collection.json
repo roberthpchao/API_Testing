@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "0d8b55ce-f46b-4f8a-ba35-5358733e1a55",
+		"name": "GitHub API test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43731085",
+		"_collection_link": "https://red-mount.postman.co/workspace/API-Testing-Training~52e330ec-4f4d-4357-837e-67388d7e4c54/collection/43731085-0d8b55ce-f46b-4f8a-ba35-5358733e1a55?action=share&source=collection_link&creator=43731085"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.github.v3+json",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.26.8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/users/{{username}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users",
+						"{{username}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
