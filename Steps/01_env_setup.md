@@ -1,4 +1,4 @@
-Step 1: Set Up VS Code Environment
+## Step 1: Set Up VS Code Environment
 Open VS Code
 
 Open your API_Testing folder: File → Open Folder
@@ -12,23 +12,23 @@ python --version
 ```
 You should see Python 3.x.x
 
-Step 2: Install Python Dependencies in VS Code Terminal
+## Step 2: Install Python Dependencies in VS Code Terminal
 In the VS Code PowerShell terminal:
 
-# Navigate to your API_Testing folder if not already there
+ Navigate to your API_Testing folder if not already there
 cd C:\path\to\your\API_Testing
 
-# Create requirements.txt file (copy the content I provided earlier)
-# Then install:
+ Create requirements.txt file (copy the content I provided earlier)
+ Then install:
 ```
 pip install -r requirements.txt
 ```
-# Or install individually:
+ Or install individually:
 ```
 pip install requests pytest python-dotenv
 ```
 
-### Step 3: Complete the Repository Structure
+## Step 3: Complete the Repository Structure
 In your API_Testing folder, create this structure:
 ```
   API_Testing/  
@@ -68,7 +68,7 @@ mkdir module-02-python-automation/utilities
 mkdir module-02-python-automation/data
 ```
 
-### Step 3.1 Setup venv
+## Step 3.1 Setup venv
 
 ```
 # 1. Navigate to your API_Testing folder
@@ -98,4 +98,38 @@ pip install -r requirements.txt
 python --version
 pip list
 ```
+---
 Update Structure and Update .gitignore to include venv:
+---
+Update .gitignore
+```
+git init
+git add .
+git commit -m
+```
+  ---
+  ### Complete Git setup
+  ```
+  # Initialize git repository
+git init
+# Add all files (except those in .gitignore)
+git add .
+# Commit with message
+git commit -m "Initial setup: API Testing training repository"
+# Connect to GitHub (after creating repo on GitHub.com)
+git remote add origin https://github.com/roberthpchao/API_Testing.git
+# Rename branch to main
+git branch -M main
+# Push to GitHub
+git push -u origin main
+```
+---
+Quick verification
+```
+# See what's been committed
+git log --oneline
+# Check status
+git status
+# See remote connections
+git remote -v
+```
