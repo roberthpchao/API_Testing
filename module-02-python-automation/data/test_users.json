@@ -1,0 +1,29 @@
+{
+  "valid_users": [
+    {
+      "username": "octocat",
+      "expected_type": "User",
+      "description": "GitHub mascot"
+    },
+    {
+      "username": "github",
+      "expected_type": "Organization",
+      "description": "GitHub organization"
+    },
+    {
+      "username": "defunkt",
+      "expected_type": "User",
+      "description": "GitHub founder"
+    }
+  ],
+  "invalid_users": [
+    {
+      "username": "nonexistentuser123456789",
+      "expected_error": "404"
+    },
+    {
+      "username": "",
+      "expected_error": "404"
+    }
+  ]
+}
